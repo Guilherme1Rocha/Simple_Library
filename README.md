@@ -1,4 +1,4 @@
-### Text Justification, Hondt Method, and Linear Equations Solver
+#### Text Justification, Hondt Method, and Linear Equations Solver
 
 ## Overview
 This repository contains three independent programming exercises designed to reinforce fundamental programming concepts. The exercises cover **text formatting**, **election result calculations using the Hondt method**, and **solving linear equation systems**.
