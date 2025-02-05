@@ -1,4 +1,4 @@
-T# Text Justification, Hondt Method, and Linear Equations Solver
+### Text Justification, Hondt Method, and Linear Equations Solver
 
 ## Overview
 This repository contains three independent programming exercises designed to reinforce fundamental programming concepts. The exercises cover **text formatting**, **election result calculations using the Hondt method**, and **solving linear equation systems**.
@@ -41,8 +41,6 @@ Implement an algorithm to solve systems of linear equations using Jacobi’s met
 
 A system of equations can be represented in matrix form as:
 
-\[ A \cdot x = c \]
-
 Where:
 - \( A \) is the coefficient matrix,
 - \( x \) is the vector of unknowns (variables),
@@ -53,33 +51,11 @@ Jacobi’s method is an iterative technique for solving systems of linear equati
 
 In each iteration, the method updates the value of each variable based on the current estimates of the other variables.
 
-For the system of equations \( A \cdot x = c \), the Jacobi method is applied as follows:
-
-- Start with an initial guess for \( x^{(0)} \), the vector of unknowns.
-- Update each component of \( x^{(k+1)} \) based on the previous iteration’s values:
-  
-  \[
-  x_i^{(k+1)} = \frac{1}{a_{ii}} \left( c_i - \sum_{j \neq i} a_{ij} \cdot x_j^{(k)} \right)
-  \]
-  
-  where:
-  - \( a_{ii} \) are the diagonal elements of the matrix \( A \),
-  - \( a_{ij} \) are the off-diagonal elements of the matrix \( A \),
-  - \( c_i \) are the components of the vector \( c \),
-  - \( x_j^{(k)} \) are the values of the variables from the previous iteration.
-
 ### Convergence:
 The method converges when the difference between successive iterations is smaller than a defined tolerance, i.e., when:
 
-\[
-\| x^{(k+1)} - x^{(k)} \| < \epsilon
-\]
-
-Where:
-- \( \epsilon \) is the tolerance level, a small positive value.
-
 ## Key Steps:
-1. Choose an initial estimate for the solution vector \( x^{(0)} \).
+1. Choose an initial estimate for the solution vector.
 2. Perform iterative updates based on the Jacobi formula.
 3. Continue iterating until the solution converges to the desired tolerance.
 
